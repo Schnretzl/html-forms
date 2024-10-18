@@ -10,7 +10,7 @@
 <!-- Task 1: Implementing Email Input -->
     <form action="" method="post">
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="john.doe@example.com" required>
+        <input type="email" name="email" id="email" placeholder="john.doe@example.com" required aria-required="true">
     </form>
     <button type="submit">Submit</button>
     <hr>
@@ -18,7 +18,7 @@
 <!-- Task 2: Utilizing Number Input -->
     <form action="" method="post">
         <label for="quantity">Quantity:</label>
-        <input type="number" name="quantity" id="quantity" min="1" max="99" required>
+        <input type="number" name="quantity" id="quantity" min="1" max="99" required aria-required="true">
     </form>
     <button type="submit">Submit</button>
     <hr>
@@ -26,7 +26,7 @@
 <!-- Task 3: Employing Date Input -->
     <form action="" method="post">
         <label for="date">Date:</label>
-        <input type="date" name="date" id="date" required>
+        <input type="date" name="date" id="date" required aria-required="true">
     </form>
     <button type="submit">Submit</button>
     <hr>
@@ -34,7 +34,7 @@
 <!-- Task 4: Enhancing User Experience with Range Input -->
     <form action="" method="post">
         <label for="quantity">Quantity(0 - 100):</label>
-        <input type="range" name="quantity" id="quantity" min="0" max="100" required oninput="quantityOutput.value = quantity.value">
+        <input type="range" name="quantity" id="quantity" min="0" max="100" required aria-required="true" oninput="quantityOutput.value = quantity.value">
         <output name="quantityOutput" id="quantityOutput">50</output> <!-- Default value set to 50 -->
     </form>
     <button type="submit">Submit</button>
@@ -43,7 +43,7 @@
 <!-- Task 5 (BONUS): Capturing Color with Color Input -->
     <form action="" method="post">
         <label for="color">Color:</label>
-        <input type="color" name="color" id="color" value="#00AAFF" required>
+        <input type="color" name="color" id="color" value="#00AAFF" required aria-required="true">
     </form>
     <button type="submit">Submit</button>
     <hr>
@@ -52,7 +52,7 @@
 <!-- Task 1: Creating a Selection Experience -->
     <form action="" method="post">
         <label for="favorite">Favorite programming language:</label>
-        <select name="favorite" id="favorite" required>
+        <select name="favorite" id="favorite" required aria-required="true">
             <option value="python">Python</option>
             <option value="javascript">JavaScript</option>
             <option value="java">Java</option>
@@ -62,22 +62,23 @@
         <br>
 
         <label for="expertise">Expertise:</label>
-        <input type="radio" id="beginner" name="expertise" value="beginner" required>
+        <input type="radio" id="beginner" name="expertise" value="beginner" required aria-required="true">
         <label for="beginner">Beginner</label>
-        <input type="radio" id="intermediate" name="expertise" value="intermediate" required>
+        <input type="radio" id="intermediate" name="expertise" value="intermediate" required aria-required="true">
         <label for="intermediate">Intermediate</label>
-        <input type="radio" id="advanced" name="expertise" value="advanced" required>
+        <input type="radio" id="advanced" name="expertise" value="advanced" required aria-required="true">
         <label for="advanced">Advanced</label>
         <br>
 
         <label for="preferred-platform">Preferred Development Platform:</label>
-        <input type="checkbox" id="web" name="preferred-platform" value="web" required>
+        <input type="checkbox" id="web" name="preferred-platform" value="web" required aria-required="true">
         <label for="web">Web</label>
-        <input type="checkbox" id="desktop" name="preferred-platform" value="desktop" required>
+        <input type="checkbox" id="desktop" name="preferred-platform" value="desktop" required aria-required="true">
         <label for="desktop">Desktop</label>
-        <input type="checkbox" id="mobile" name="preferred-platform" value="mobile" required>
+        <input type="checkbox" id="mobile" name="preferred-platform" value="mobile" required aria-required="true">
         <label for="mobile">Mobile</label>
     </form>
 
+<!-- Task 2: Improving Accessibility -->
 </body>
 </html>
