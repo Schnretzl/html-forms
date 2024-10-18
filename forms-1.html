@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 1. Exploring New HTML5 Input Types -->
+<!-- Task 1: Implementing Email Input -->
+    <form action="" method="post">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="john.doe@example.com" required>
+    </form>
+    <button type="submit">Submit</button>
+    <hr>
+
+<!-- Task 2: Utilizing Number Input -->
+    <form action="" method="post">
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" min="1" max="99" required>
+    </form>
+    <button type="submit">Submit</button>
+    <hr>
+
+<!-- Task 3: Employing Date Input -->
+    <form action="" method="post">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" required>
+    </form>
+    <button type="submit">Submit</button>
+    <hr>
+
+<!-- Task 4: Enhancing User Experience with Range Input -->
+    <form action="" method="post">
+        <label for="quantity">Quantity(0 - 100):</label>
+        <input type="range" name="quantity" id="quantity" min="0" max="100" required oninput="quantityOutput.value = quantity.value">
+        <output name="quantityOutput" id="quantityOutput">50</output> <!-- Default value set to 50 -->
+    </form>
+    <button type="submit">Submit</button>
+    <hr>
+
+<!-- Task 5 (BONUS): Capturing Color with Color Input -->
+    <form action="" method="post">
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color" value="#00AAFF" required>
+    </form>
+    <button type="submit">Submit</button>
+    <hr>
+</body>
+</html>
